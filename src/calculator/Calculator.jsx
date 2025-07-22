@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
-import './Calculator.css'
+import './Calculator.css';
+import { evaluate } from 'mathjs';
 
 const Calculator = () => {
 
@@ -11,7 +12,15 @@ const Calculator = () => {
         setInputValue(inputValue + value);
     }
 
-    const calculate =() => setInputValue(eval(inputValue))
+    const calculate =() => {
+        try{
+            const result = evaluate(inputValue);
+            setInputValue(result.toString());
+        }
+        catch(error){
+            setInputValue(error);
+        }
+    }
 
   return (
     <form className='calculator' name="calc">
