@@ -6,12 +6,12 @@ body {
   align-items: center;
 }
 
-.container {
+/* .container {
   background: #fcfff3;
   padding: 50px;
   border: 2px solid #333;
   box-shadow: 5px 5px 0 purple;
-}
+} */
 
 input {
   padding: 15px;

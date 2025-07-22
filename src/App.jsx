@@ -2,6 +2,7 @@ import Calculator from './calculator/Calculator'
 import ToggleBackgroundColor from './colortoggler/ToggleBackgroundColor'
 import Counter from './counter/Counter'
 import Meals from './mealsAPI/meals'
+import SearchBar from './searchbar/SearchBar'
 import Todo from './todos/Todo'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       {/* <Todo /> */}
       {/* <Meals /> */}
       {/* <Calculator /> */}
-      <ToggleBackgroundColor />
+      {/* <ToggleBackgroundColor /> */}
+      <SearchBar />
     </div>
   )
 }
