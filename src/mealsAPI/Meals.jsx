@@ -1,4 +1,3 @@
-import React from 'react'
 import './Meals.css'
 import axios from 'axios'
 import { useState,useEffect } from 'react'
