@@ -1,30 +1,32 @@
-import Accordian from './accordian/Accordian'
-import Calculator from './calculator/Calculator'
-import ToggleBackgroundColor from './colortoggler/ToggleBackgroundColor'
-import Counter from './counter/Counter'
-import Meals from './mealsAPI/meals'
-import SearchBar from './searchbar/SearchBar'
-import Testimonials from './testomonials/testimonials'
-import Todo from './todos/Todo'
-import { accordionData } from './accordian/utils/content'
+import Accordian from "./accordian/Accordian";
+import Calculator from "./calculator/Calculator";
+import ToggleBackgroundColor from "./colortoggler/ToggleBackgroundColor";
+import Counter from "./counter/Counter";
+import Meals from "./mealsAPI/meals";
+import SearchBar from "./searchbar/SearchBar";
+import Testimonials from "./testomonials/testimonials";
+import Todo from "./todos/Todo";
+//import { accordionData } from './accordian/utils/content'
+import "./App.css";
+import Forms from "./forms/Forms";
 
 function App() {
   return (
     <div>
-       {/* <Counter />  */}
+      {/* <Counter />  */}
       {/* <Todo /> */}
       {/* <Meals /> */}
       {/* <Calculator /> */}
       {/* <ToggleBackgroundColor /> */}
       {/* <SearchBar /> */}
       {/* <Testimonials /> */}
-      
-      {accordionData.map(({ title, content }, index) => (
+
+      {/* {accordionData.map(({ title, content }, index) => (
         <Accordian key={index} title={title} content={content} />
-      ))}
-      
+      ))} */}
+      <Forms />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
